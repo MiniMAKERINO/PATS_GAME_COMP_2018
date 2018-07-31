@@ -39,11 +39,11 @@ public class InteractiveObject : MonoBehaviour {
             switch(movementType){
                 // For rotating the object
                 case MovementType.Rotate:
-                    iTween.MoveTo(gameObject, iTweenArgs);
+                    iTween.RotateTo(gameObject, iTweenArgs);
                     break;
                 // For sliding the object
                 case MovementType.Slide:
-                    iTween.RotateTo(gameObject, iTweenArgs);
+                    iTween.MoveTo(gameObject, iTweenArgs);
                     break;
             }
 
